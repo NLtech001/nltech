@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Dashboard - NL Tech Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <header class="dashboard-header">
+        <div class="header-title">
+            <i class="fas fa-network-wired"></i>
+            <h1>NL Tech</h1>
+        </div>
+        <button id="logoutButton" class="logout-button">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </button>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="welcome-note">
+            <h2>Welcome back, <span id="username-display"></span>!</h2>
+            <p>Here's your overview for today.</p>
+        </div>
+
+        <div class="card-container">
+            <!-- Payments Card -->
+            <div class="card payments-card">
+                <div class="card-header">
+                    <i class="fas fa-wallet card-icon"></i>
+                    <h3>Payment Overview</h3>
+                </div>
+                <div class="card-body">
+                    <div class="payment-info cleared">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="payment-details">
+                            <span class="payment-amount">€ 5,250.00</span>
+                            <span class="payment-status">Cleared Payments</span>
+                        </div>
+                    </div>
+                    <div class="payment-info due">
+                        <i class="fas fa-hourglass-half"></i>
+                        <div class="payment-details">
+                            <span class="payment-amount">€ 1,800.00</span>
+                            <span class="payment-status">Due Payments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="checker.html" class="card-button">
+                        <i class="fas fa-search-dollar"></i> Checker
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="dashboard-footer">
+        <a href="https://wa.me/yourphonenumber" target="_blank" class="footer-button whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp Support
+        </a>
+        <a href="https://t.me/yourchannel" target="_blank" class="footer-button telegram">
+            <i class="fab fa-telegram-plane"></i> Telegram Channel
+        </a>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

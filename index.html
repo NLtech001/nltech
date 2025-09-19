@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NL Tech Workers - Secure Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="login-container">
+        <form id="loginForm" class="login-form">
+            <div class="form-header">
+                <i class="fas fa-network-wired logo"></i>
+                <h1>NL Tech Portal</h1>
+                <p>Secure Access for Professionals</p>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-button" id="loginButton">
+                <span class="button-text">Login</span>
+                <span class="button-loader" style="display: none;"></span>
+            </button>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
